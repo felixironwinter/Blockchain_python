@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6aed8cbb-7bc1-4bfc-9d03-49265a9c0957</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Blockchain_python.py</StartupFile>
+    <StartupFile>Blockchain_python_json.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
