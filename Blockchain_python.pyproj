@@ -11,6 +11,8 @@
     <OutputPath>.</OutputPath>
     <Name>Blockchain_python</Name>
     <RootNamespace>Blockchain_python</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>MSBuild|env_blockchain|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +24,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Blockchain_python.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.8-32" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="..\..\envs\env_blockchain\">
+      <Id>env_blockchain</Id>
+      <Version>3.8</Version>
+      <Description>env_blockchain (Python 3.8 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
