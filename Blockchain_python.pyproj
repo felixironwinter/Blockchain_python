@@ -23,6 +23,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Blockchain_python_json.py" />
     <Compile Include="Blockchain_python.py" />
   </ItemGroup>
   <ItemGroup>

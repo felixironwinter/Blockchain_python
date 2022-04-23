@@ -1,8 +1,8 @@
 
 from hashlib import sha256
 import time
-import flask import Flask, request
 import requests
+from flask import Flask, requests
 
 
 class Block:
