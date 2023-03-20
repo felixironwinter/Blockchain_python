@@ -73,7 +73,5 @@ class Blockchain:
         return new_block.index
 
 
-print('hello world')
-
 
 
